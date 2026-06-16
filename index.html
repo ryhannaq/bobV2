@@ -1,1 +1,386 @@
-oi
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bob Esponja Calça Quadrada</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Fredoka',sans-serif;
+    background:
+        linear-gradient(
+            rgba(0,180,255,.15),
+            rgba(0,120,255,.35)
+        );
+    color:#1f2937;
+    overflow-x:hidden;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    position:relative;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.15)
+        ),
+        linear-gradient(#4fc3f7,#0288d1);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.5) 0 10px, transparent 11px),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.5) 0 8px, transparent 9px),
+    radial-gradient(circle at 30% 80%, rgba(255,255,255,.5) 0 15px, transparent 16px);
+    opacity:.5;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:1200px;
+}
+
+.hero img{
+    width:320px;
+    max-width:90%;
+    animation:flutuar 4s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.hero h1{
+    margin-top:20px;
+    font-size:4rem;
+    color:#FFD600;
+    text-shadow:
+        3px 3px #000,
+        6px 6px rgba(0,0,0,.25);
+}
+
+.hero p{
+    color:white;
+    font-size:1.3rem;
+    margin-top:15px;
+}
+
+/* ===== CONTAINER ===== */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+/* ===== CARDS ===== */
+
+.card{
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    margin-bottom:35px;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#f59e0b;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* ===== BIO ===== */
+
+.bio{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.bio img{
+    width:100%;
+    border-radius:25px;
+}
+
+/* ===== PERSONAGENS ===== */
+
+.personagens{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.personagem{
+    background:#fffef2;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+}
+
+.personagem img{
+    width:220px;
+    max-width:100%;
+}
+
+.personagem h3{
+    color:#0c4a6e;
+    margin-top:15px;
+}
+
+/* ===== LICENÇA ===== */
+
+.licenca{
+    text-align:center;
+}
+
+.licenca img{
+    width:500px;
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+/* ===== LINKS ===== */
+
+.links{
+    display:grid;
+    gap:15px;
+}
+
+.link-card{
+    background:#fff7cc;
+    padding:18px;
+    border-left:8px solid #FFD600;
+    border-radius:15px;
+}
+
+.link-card a{
+    color:#0369a1;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.link-card a:hover{
+    color:#ea580c;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#075985;
+    color:white;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .bio{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <img src="images/image2.png" alt="Bob Esponja">
+
+        <h1>BOB ESPONJA CALÇA QUADRADA</h1>
+
+        <p>
+            O cozinheiro mais famoso da Fenda do Biquíni
+        </p>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <section class="card bio">
+
+        <img src="images/image2.png" alt="Bob Esponja">
+
+        <div>
+
+            <h2>Quem é Bob Esponja?</h2>
+
+            <p>
+                <strong>Bob Esponja Calça Quadrada</strong>
+                (nascido em 14 de julho de 1986)
+                é o principal protagonista da série animada
+                de mesmo nome e de
+                <a href="https://spongebob.fandom.com/wiki/Kamp_Koral:_SpongeBob%27s_Under_Years" target="_blank">
+                    Kamp Koral: Os Anos de Infância do Bob Esponja
+                </a>.
+            </p>
+
+            <p>
+                Ele foi criado pelo ex-biólogo marinho
+                <a href="https://spongebob.fandom.com/wiki/Stephen_Hillenburg" target="_blank">
+                    Stephen Hillenburg
+                </a>.
+            </p>
+
+            <p>
+                A inspiração veio do personagem criado para o livro
+                <a href="https://spongebob.fandom.com/wiki/The_Intertidal_Zone" target="_blank">
+                    A Zona Intertidal
+                </a>.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Vida na Fenda do Biquíni</h2>
+
+        <p>
+            Bob Esponja é uma esponja marinha alegre, trabalhadora,
+            boba e extremamente otimista.
+        </p>
+
+        <p>
+            Vive em um abacaxi com seu caracol Gary,
+            é melhor amigo de Patrick Estrela
+            e trabalha como cozinheiro no Siri Cascudo.
+        </p>
+
+        <p>
+            Seu sonho é conseguir sua licença de barco
+            na Escola de Pilotagem da Sra. Puff.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Galeria</h2>
+
+        <div class="personagens">
+
+            <div class="personagem">
+                <img src="images/image3.png" alt="">
+                <h3>Bob Esponja</h3>
+            </div>
+
+            <div class="personagem">
+                <img src="images/image4.png" alt="">
+                <h3>Versão Clássica</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card licenca">
+
+        <h2>Licença de Barco</h2>
+
+        <img src="images/image1.png" alt="Licença">
+
+        <p style="margin-top:20px">
+            Apesar de inúmeras tentativas,
+            Bob Esponja continua reprovando
+            no exame da Sra. Puff.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Links Oficiais</h2>
+
+        <div class="links">
+
+            <div class="link-card">
+                🧽
+                <a href="https://spongebob.fandom.com/wiki/Kamp_Koral:_SpongeBob%27s_Under_Years" target="_blank">
+                    Kamp Koral
+                </a>
+            </div>
+
+            <div class="link-card">
+                🌊
+                <a href="https://spongebob.fandom.com/wiki/Stephen_Hillenburg" target="_blank">
+                    Stephen Hillenburg
+                </a>
+            </div>
+
+            <div class="link-card">
+                📚
+                <a href="https://spongebob.fandom.com/wiki/The_Intertidal_Zone" target="_blank">
+                    A Zona Intertidal
+                </a>
+            </div>
+
+            <div class="link-card">
+                ⭐
+                <a href="https://spongebob.fandom.com/wiki/Help_Wanted" target="_blank">
+                    Procura-se Ajudante
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    🧽 Bob Esponja Calça Quadrada • Fenda do Biquíni
+</footer>
+
+</body>
+</html>
+

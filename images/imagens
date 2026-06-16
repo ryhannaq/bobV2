@@ -1,1 +1,9 @@
-
+images/
+├── image1.png   (licença)
+├── image2.png   (Bob Esponja sorrindo)
+├── image3.png   (rosto quadrado)
+└── image4.png   (Bob Esponja de terno)
+<img3 src="https://chatgpt.com/backend-api/estuary/content?id=file_000000000028720e9513a15f91583dec&amp;ts=494893&amp;p=fs&amp;cid=1&amp;sig=0205f9677676efbe0d1075265fb8601b88626901b5a9ce58cfbaa703237fd76a&amp;v=0" alt="image3(1).png"/>
+<img2 src="https://chatgpt.com/backend-api/estuary/content?id=file_000000002dcc720ea9ed4e7e9f6cd016&amp;ts=494893&amp;p=fs&amp;cid=1&amp;sig=45b5f5e9a6a9b5f4005a1b0fade951366b092b6c6dffcd8836463eed4beba20e&amp;v=0" alt="image2(1).png"/>
+<img1 src="https://chatgpt.com/backend-api/estuary/content?id=file_000000000b78720e9afbf8a07f6f3c88&amp;ts=494893&amp;p=fs&amp;cid=1&amp;sig=1a916d6ee915665e490ce532bbf6ea2d2d39735347ffb2cbedadef98b8e36575&amp;v=0" alt="image1.png"/>
+<img4 src="https://chatgpt.com/backend-api/estuary/content?id=file_00000000026c720e8f7bfa53fed1d1ea&amp;ts=494893&amp;p=fs&amp;cid=1&amp;sig=da8cb76e8f85cb6d6179e159710c87f6721a53571a34125149f631eab14c43a3&amp;v=0" alt="i-put-a-suit-on-my-strange-son-and-he-looks-like-spongebob-v0-kszo44ghidse1.webp"/>
